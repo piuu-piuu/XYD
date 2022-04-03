@@ -12,7 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        let keyword = localStorage.getItem("storage");
+        var keyword = localStorage.getItem("storage");
         var caption = document.getElementById("key-caption");
     </script>
 </head>
@@ -132,7 +132,6 @@
             absurd_value = document.getElementById("range_absurd").value
 
             document.getElementById("main_image").setAttribute("style", "filter: url(#svgfilter" + absurd_value + ") hue-rotate(" + hue_value + ");")
-
         }
     </script>
 
@@ -183,22 +182,24 @@
             document.getElementById("my-audio").src = 'test_sound' + volume_value + '.mp3';
             document.getElementById("my-audio").load();
             document.getElementById("my-audio").play();
-
         }
     </script>
 
 
     <!--    mail     -->
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="smtp.js"></script>
     <input id='send-all' type="button" value="заказать" onclick="sendEmail()">
     <script>
-        function sendEmail() {
+        function sendEmail(body_text) {
+            body_text = keyword + 'цвет: ' + hue_value + '; ' + 'освещение ' + brt_value + '; ' + 'прикосновение ' + touch_value + '; ' + 'громкость ' + volume_value + '; ' + 'градус абсурда ' + absurd_value + ' ; ' + 'локация ' + document.getElementById("location").value + '; ' + 'бюджет ' + document.getElementById("budget").value + '; ' + 'дедлайн ' + document.getElementById("deadline").value + '; ' + '*ваш контакт ' + document.getElementById("contacts").value + '; ' + 'экстра ' + document.getElementById("extra").value;
+
+            alert(body_text)
             Email.send({
                 Subject: "This is the subject",
-                Body: "And this is the body"
+                Body: body_text
             }).then(
-                message => alert(message)
+                // message => alert(message)
             );
         }
 
