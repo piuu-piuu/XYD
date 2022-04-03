@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="funerals_style.css">
+    <link rel="stylesheet" href="funerals_labels.css">
+    <link rel="stylesheet" href="funerals_sliders.css">
+    <style></style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        let keyword = localStorage.getItem("storage");
+        var caption = document.getElementById("key-caption");
+    </script>
+</head>
+
+<body id="main_body">
+
+
+    <!-- <div class="cursor">
+        <img id="cursor_pic" src="images/cursor0.cur" style="position:absolute; 
+        left: -23px;
+        top: -23px; 
+        z-index: 0;">
+    </div> -->
+
+    <!-- <img class="main_image" id="main_image" src="images/funerals-1.jpg" alt=""> -->
+    <img class="main_image" id="main_image" src="" alt="">
+
+    <h1>худ.агентство</h1>
+    <h2>поддержка</h2>
+    <h2>очень весело</h2>
+    <h2 id="key-caption">похороны</h2>
+
+    <div class="color_box"> </div>
+    <div class="brightness_box"></div>
+    <div class="touch_box"> </div>
+    <div class="volume_box"> </div>
+    <div class="absurd_box"> </div>
+    <div class="temperature_box"> </div>
+
+    <input type="text" id="location" value="">
+    <input type="text" id="budget" value="">
+    <input type="text" id="deadline" value="">
+    <input type="text" id="contacts" value="">
+    <input type="text" id="extra" value="">
+
+    <label class="color_box_lbl"> цвет </label>
+    <label class="brightness_box_lbl">освещение </label>
+    <label class="touch_box_lbl"> прикосновение </label>
+    <label class="volume_box_lbl"> громкость </label>
+    <label class="absurd_box_lbl"> градус абсурда </label>
+    <label class="temperature_box_lbl"> температура </label>
+    <label class="location_lbl"> локация* </label>
+    <label class="budget_lbl"> бюджет* </label>
+    <label class="deadline_lbl"> дедлайн* </label>
+    <label class="contacts_lbl"> ваш контакт* </label>
+    <label class="extra_lbl"> экстра </label>
+
+
+    <!-- color slider  ------------------------------------------------------------------->
+
+    <div class="slidecontainer_color">
+        <input type="range" min="1" max="360" value="360" class="slider_color" id="range_color">
+    </div>
+
+    <script>
+        var slider_color = document.getElementById("range_color");
+        var hue_value = 0;
+        slider_color.oninput = function() {
+            hue_value = document.getElementById("range_color").value + "deg"
+            document.getElementById("main_image").setAttribute("style", "filter:hue-rotate(" + hue_value + ")")
+        }
+    </script>
+
+    <!-- brightness slider  ------------------------------------------------------------------->
+
+    <div class="slidecontainer_brightness">
+        <input type="range" min="80" max="255" value="255" class="slider_brightness" id="range_brightness">
+    </div>
+
+    <script>
+        var slider_brightness = document.getElementById("range_brightness");
+        var brt_value = 255;
+        slider_brightness.oninput = function() {
+            brt_value = document.getElementById("range_brightness").value
+            document.getElementById("main_body").setAttribute("style", "background-color: rgb(" + brt_value + "," + brt_value + "," + brt_value + ") ;")
+        }
+    </script>
+
+    <!--  absurd        -->
+
+    <svg version="1.1" width="0" height="0">
+        <filter id="svgfilter0" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+            <feDisplacementMap id="filtermap" in="main_image" in2="main_image" scale="0" xChannelSelector="R"
+                yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap" />
+        </filter>
+        <filter id="svgfilter1" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+            <feDisplacementMap id="filtermap" in="main_image" in2="main_image" scale="15" xChannelSelector="R"
+                yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap" />
+        </filter>
+        <filter id="svgfilter2" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+            <feDisplacementMap id="filtermap" in="main_image" in2="main_image" scale="30" xChannelSelector="R"
+                yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap" />
+        </filter>
+        <filter id="svgfilter3" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+            <feDisplacementMap id="filtermap" in="main_image" in2="main_image" scale="60" xChannelSelector="R"
+                yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap" />
+        </filter>
+        <filter id="svgfilter4" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+            <feDisplacementMap id="filtermap" in="main_image" in2="main_image" scale="120" xChannelSelector="R"
+                yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap" />
+        </filter>
+    </svg>
+
+    <div class="slidecontainer_absurd">
+        <input type="range" min="0" max="4" value="0" class="slider_absurd" id="range_absurd">
+    </div>
+
+    <script>
+        var slider_absurd = document.getElementById("range_absurd");
+        var absurd_value = 0;
+        slider_absurd.oninput = function() {
+            absurd_value = document.getElementById("range_absurd").value
+
+            document.getElementById("main_image").setAttribute("style", "filter: url(#svgfilter" + absurd_value + ") hue-rotate(" + hue_value + ");")
+
+        }
+    </script>
+
+
+    <!--  touch        -->
+
+    <!-- <script>
+        const cursor = document.querySelector(".cursor");
+        const mouseMove = function(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+        };
+
+        document.addEventListener("mousemove", mouseMove); -->
+    </script>
+
+    <div class="slidecontainer_touch">
+        <input type="range" min="0" max="1" value="0" class="slider_touch" id="range_touch">
+    </div>
+
+    <script>
+        var slider_touch = document.getElementById("range_touch");
+        var touch_value = 0;
+        slider_touch.oninput = function() {
+            touch_value = document.getElementById("range_touch").value;
+            // document.getElementById("cursor_pic").src = "images/cursor" + touch_value + ".cur";
+        }
+    </script>
+
+    <!--  audio  -->
+
+    <audio id="my-audio" controls hidden>
+        <source src="test_sound0.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="slidecontainer_volume">
+        <input type="range" min="0" max="1" value="0" class="slider_volume" id="range_volume">
+    </div>
+
+    <script>
+        var slider_volume = document.getElementById("range_volume");
+        var volume_value = 0;
+        slider_volume.oninput = function() {
+
+            volume_value = document.getElementById("range_volume").value;
+            document.getElementById("my-audio").src = 'test_sound' + volume_value + '.mp3';
+            document.getElementById("my-audio").load();
+            document.getElementById("my-audio").play();
+
+        }
+    </script>
+
+
+    <!--    mail     -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <input id='send-all' type="button" value="заказать" onclick="sendEmail()">
+    <script>
+        function sendEmail() {
+            Email.send({
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+
+
+        var caption = document.getElementById("key-caption");
+        caption.innerText = keyword;
+
+        link = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&method=flickr.photos.search&tags=" + keyword
+
+        $(document).ready(function() {
+
+            $.getJSON(link, {
+                    tagmode: "any",
+                    format: "json"
+                },
+
+                function(data) {
+                    var rnd = Math.floor(Math.random() * data.items.length);
+                    var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
+                    var img = document.getElementById("main_image");
+                    img.src = image_src;
+                    // alert(image_src)
+                });
+
+        });
+    </script>
+
+</body>

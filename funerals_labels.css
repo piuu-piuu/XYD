@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+.color_box_lbl {
+    position: absolute;
+    /* width: 262px;
+    height: 30px; */
+    left: 1190px;
+    top: 165px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+}
+
+.brightness_box_lbl {
+    position: absolute;
+    /* width: 260px;
+    height: 30px; */
+    left: 1122px;
+    top: 247px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+}
+
+.touch_box_lbl {
+    -webkit-text-stroke: 0.1px black;
+    position: absolute;
+    /* width: 260px;
+    height: 30px; */
+    left: 1122px;
+    top: 326px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+}
+
+.volume_box_lbl {
+    position: absolute;
+    /* width: 260px;
+    height: 30px; */
+    left: 1120px;
+    top: 404px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+    z-index: 3;
+}
+
+.absurd_box_lbl {
+    position: absolute;
+    /* width: 260px;
+    height: 30px; */
+    left: 975px;
+    top: 565px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+    z-index: 3;
+}
+
+.temperature_box_lbl {
+    position: absolute;
+    /* width: 173px;
+    height: 30px; */
+    left: 1725px;
+    top: 825px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    transform: rotate(-90deg);
+}
+
+.location_lbl {
+    -webkit-text-stroke: 0.1px black;
+    position: absolute;
+    /* width: 176px;
+    height: 33px; */
+    left: 1053px;
+    top: 642px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+    z-index: 3;
+}
+
+.budget_lbl {
+    position: absolute;
+    /* width: 116px;
+    height: 29px; */
+    left: 100px;
+    top: 686px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+}
+
+.deadline_lbl {
+    position: absolute;
+    /* width: 149px;
+    height: 33px; */
+    left: 1108px;
+    top: 721px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.contacts_lbl {
+    position: absolute;
+    /* width: 262px;
+    height: 30px; */
+    left: 100px;
+    top: 754px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+    z-index: 3;
+}
+
+.extra_lbl {
+    position: absolute;
+    /* width: 114px;
+    height: 30px; */
+    left: 250px;
+    top: 830px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: gray;
+}

@@ -1,0 +1,15 @@
+#visible { 
+    animation:  in 1s infinite alternate linear;
+    animation-delay: 1s;
+  }
+  
+  @keyframes in{
+     from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  
+}

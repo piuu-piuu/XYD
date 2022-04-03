@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> main </title>
+    <link rel="stylesheet" href="index_animations.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        body {
+            font-family: Roboto Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+        }
+        
+        img {
+            position: absolute;
+            top: 700px;
+            left: 46%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--        положение текста на странице
+                межстрочное расстояние-->
+    <div style="padding-left: 37%; padding-top: 10%;
+                line-height: 50%;">
+
+        <!--    основной текст абзаца-->
+        <p id="we">мы-</p>
+
+        <script>
+            var we = document.getElementById("we");
+            we.style.letterSpacing = "200px";
+
+            function change_we() {
+                we.style.letterSpacing = we.style.letterSpacing == "200px" ? "100px" : "200px";
+            }
+
+            window.setInterval(change_we, 1000);
+        </script>
+
+        <p> <span id="collective"> коллективное </span> худ.тело</p>
+
+        <script>
+            var collective = document.getElementById("collective");
+            collective.style.letterSpacing = "-6px";
+
+            function change_collective() {
+                collective.style.letterSpacing = collective.style.letterSpacing == "-6px" ? "0px" : "-6px";
+            }
+
+            window.setInterval(change_collective, 1700);
+            window.setInterval(change_collective, 400);
+        </script>
+
+        <p>не равн оме рно распределенное</p>
+        <p><i>производящее</i> <span id='unmade'>непроизводимое</span></p>
+
+        <script>
+            var unmade = document.getElementById("unmade");
+            unmade.innerText = 'непроизводимое'
+
+            function change_unmade() {
+                unmade.innerText = unmade.innerText == 'непроизводимое' ? "neproizvodimoe" : 'непроизводимое';
+            }
+
+            window.setInterval(change_unmade, 500);
+        </script>
+
+        <p>или
+            <span id="visible" ">видимое</span>-невидимое</p>
+
+        <p><span class = " ] ">[</span>место<span class=" ] ">]</span> <span style=" letter-spacing: -5px; ">
+                встречи</span> общих интересов</p>
+
+        <script>
+            var bracket = document.getElementsByClassName(" ] ");
+            bracket[0].style.opacity = "1 "
+            bracket[1].style.opacity = "1 "
+
+            function change_bracket() {
+                bracket[0].style.opacity = bracket[0].style.opacity == "1 " ? "0 " : "1 ";
+                bracket[1].style.opacity = bracket[1].style.opacity == "1 " ? "0 " : "1 ";
+            }
+
+            window.setInterval(change_bracket, 1000);
+        </script>
+
+
+        <p>новая форма коммуникации</p>
+        <p>художник--------художник,</p> художник--------мир, мир--------художник,</p>
+        <p>мир--------мир</p>
+
+        <p><span id="welcome ">приглашаем</span> играть художественно</p>
+        <script>
+            var welcome = document.getElementById("welcome ");
+            welcome.innerText = 'приглашаем'
+            function change_welcome() {
+                welcome.innerText = welcome.innerText == 'приглашаем' ? "ПРИГЛАШАЕМ " : 'приглашаем';
+            }
+            window.setInterval(change_welcome, 900);
+        </script>
+
+
+
+        <p>пустить <span id="art " style="font-weight: bold; ">иcкуccтво</span></p>
+        <script>
+            var art = document.getElementById("art ");
+            we.style.letterSpacing = "1px ";
+
+            function change_art() {
+                art.style.letterSpacing = art.style.letterSpacing == "1px " ? "px " : "1px ";
+            }
+            window.setInterval(change_art, 1000);
+        </script>
+
+
+
+        <p>в повседневность</p>
+    </div>
+
+
+    <a href="404.html ">
+        <img src="images/arrowb.png " alt=" ">
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body {
+    font-family: 'Roboto Mono', monospace;
+    width: 1920px;
+    height: 1080px;
+    ;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    /* cursor: None;  */
+}
+
+.cursor {
+    /*  height: 40px;
+            width: 40px;*/
+    pointer-events: none;
+    position: relative;
+    border: 0px solid black;
+    border-radius: 0%;
+    box-sizing: border-box;
+    /* transition: 0, 1s;
+            transform: translate(-50%, -50%);*/
+}
+
+.main_image {
+    position: absolute;
+    width: 0.2% auto;
+    /* height: 478px; */
+    left: 246px;
+    top: 317px;
+    z-index: 0;
+}
+
+h1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 110px;
+    font-style: light;
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 2;
+    color: gray;
+}
+
+h2 {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 110px;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 50px;
+    display: flex;
+    z-index: 2;
+    color: gray;
+}
+
+.color_box {
+    position: absolute;
+    width: 406px;
+    height: 30px;
+    left: 1269px;
+    top: 165px;
+    background: linear-gradient(90deg, #FC0000 0%, #FFE600 15.19%, #00FF19 32.93%, #00F0FF 50.91%, #001AFF 68.41%, #CC00FF 85.42%, #FF0000 100%);
+    z-index: 3;
+}
+
+.brightness_box {
+    position: absolute;
+    width: 406px;
+    height: 31px;
+    left: 1413px;
+    top: 247px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #000000 100%);
+    z-index: 3;
+}
+
+.touch_box {
+    position: absolute;
+    width: 407px;
+    height: 31px;
+    left: 1413px;
+    top: 325px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.volume_box {
+    position: absolute;
+    width: 407px;
+    height: 31px;
+    left: 1266px;
+    top: 403px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.absurd_box {
+    position: absolute;
+    width: 407px;
+    height: 31px;
+    left: 1267px;
+    top: 564px;
+    background: #CCFF00;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.temperature_box {
+    position: absolute;
+    width: 352px;
+    height: 31px;
+    left: 1640px;
+    top: 565px;
+    background: linear-gradient(90deg, #00F0FF 0%, #FF0000 100%);
+    transform: rotate(-90deg);
+    z-index: 3;
+}
+
+#location {
+    position: absolute;
+    width: 407px;
+    height: 30px;
+    left: 1260px;
+    top: 644px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+#budget {
+    position: absolute;
+    width: 1427px;
+    height: 30px;
+    left: 237px;
+    top: 685px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+#deadline {
+    position: absolute;
+    width: 261px;
+    height: 30px;
+    left: 1260px;
+    top: 725px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+#contacts {
+    position: absolute;
+    width: 407px;
+    height: 30px;
+    left: 393px;
+    top: 754px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+#extra {
+    position: absolute;
+    width: 406px;
+    height: 202px;
+    left: 393px;
+    top: 833px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+#send-all {
+    position: absolute;
+    width: 409px;
+    height: 30px;
+    left: 1258px;
+    top: 966px;
+    background: #CCFF00;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+}

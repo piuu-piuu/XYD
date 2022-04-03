@@ -1,0 +1,136 @@
+<!-- сделать все слова как выставка -->
+<!-- счетчик-ссылка на funerals -->
+<!-- поиск картинок -->
+<!-- рефакторинг -->
+<!-- хрс -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="text-catalog.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div id="agency">худ. агентство</div>
+    <a href="./funerals.html">
+        <img src='./images/Ellipse black.png' id="ellipse" onclick="PassWords(keywords)">
+    </a>
+
+    <img src='./images/shopper-black.png' id="shopper">
+    <div id="event">событие</div>
+    <div id="thing">вещь</div>
+    <div id="service">услуга</div>
+
+    <script>
+        var keywords = []
+        var i = 0
+
+        function SaveText(thatTXT) {
+            word = thatTXT.innerHTML;
+            keywords[i] = word;
+            i = i + 1
+        }
+
+        function SaveAlt(thatTXT) {
+            word = thatTXT;
+            keywords[i] = word;
+            i = i + 1
+        }
+
+        function PassWords(keywords) {
+            var item = keywords[Math.floor(Math.random() * keywords.length)];
+            localStorage.setItem('storage', item);
+        }
+    </script>
+
+    <div id="event-text">
+        <a onclick="SaveText(this)">выставка</a> > <a onclick="SaveAlt('дома')"> у вас дома</a> <a onclick="SaveText(this)">/в холодильнике</a>/
+        <a onclick="SaveAlt('in a dream')">во сне ... </a> <a onclick="SaveText(this)">везде. </a> <a onclick="SaveText(this)">др </a> >>
+        <a onclick="SaveText(this)" если уж рождаться каждый год,</a>
+            <a onclick="SaveText(this)"> то crazy,</a> >
+            <a onclick="SaveText(this)" эпатажно </a> <a onclick="SaveText(this)"> и с нежданчиками.</a>
+                <a onclick="SaveText(this)"> детский праздник > </a> <a onclick="SaveText(this)">выступление artists.</a> <a onclick="SaveText(this)"> очень мило.</a> <a onclick="SaveText(this)"> очень весело.</a>
+                <a onclick="SaveText(this)"> отлично.</a> <a onclick="SaveText(this)"> свадьба</a> > <a onclick="SaveText(this)">сладко-горькие тосты,</a> <a onclick="SaveText(this)"> изобильный выкуп невесты,</a>
+                <a onclick="SaveText(this)"> нелинейные конкурсы, </a> <a onclick="SaveText(this)">эмоциональные салюты, </a> <a onclick="SaveText(this)">вспышки! </a> <a onclick="SaveText(this)">развод 
+    </a> <a onclick="SaveText(this)">> деликатная церемония</a> <a onclick="SaveText(this)"> delete</a> <a onclick="SaveText(this)"> любви </a> <a onclick="SaveText(this)">выпускной</a> <a onclick="SaveText(this)"> > запускной. </a>
+                <a onclick="SaveText(this)">похороны >  </a> <a onclick="SaveText(this)"> 1000101010000111010101 </a> <a onclick="SaveText(this)">открытие/</a> <a onclick="SaveText(this)">закрытие</a>
+                <a onclick="SaveText(this)"> [подставь название] ></a> <a onclick="SaveText(this)"> чтоб все прониклись аж на молекулярном уровне. </a> <a onclick="SaveText(this)">свидание > </a> <a onclick="SaveText(this)">уляля, </a>
+                <a onclick="SaveText(this)">румяные щёчки, </a> <a onclick="SaveText(this)">сюр,</a> <a onclick="SaveText(this)"> приз.</a>
+    </div>
+
+    <div id="thing-text">
+        <a onclick="SaveText(this)">картина </a> > <a onclick="SaveText(this)">живо пись</a> , <a onclick="SaveText(this)">холст+масличко</a> , <a onclick="SaveText(this)">двп+акрил</a> , <a onclick="SaveText(this)">бумага+карандаш</a> , 
+	<a onclick="SaveText(this)">холст+хлеб</a> , <a onclick="SaveText(this)">картон+балончик</a>  <a onclick="SaveText(this)">etc.</a>  <a onclick="SaveText(this)">скульптура</a>  > <a onclick="SaveText(this)">сконструируем знак</a> ,
+	 <a onclick="SaveText(this)">символ</a>  <a onclick="SaveText(this)">актуальный</a>  <a onclick="SaveText(this)">для конкретного</a> <a onclick="SaveText(this)">пространства или</a> <a onclick="SaveText(this)">случая</a>. <a onclick="SaveText(this)">создадим объемное высказывание</a>,
+	 <a onclick="SaveText(this)">которое заполнит всё</a>. <a onclick="SaveText(this)">украшение</a>
+        > <a onclick="SaveText(this)">создадим временную выставку</a> <a onclick="SaveText(this)">в вашем декольте</a>, <a onclick="SaveText(this)">мочках ушей</a>, <a onclick="SaveText(this)">пальчиках</a>,<a onclick="SaveText(this)"> запястьях</a>,
+	<a onclick="SaveText(this)"> щиколотках</a>, <a onclick="SaveText(this)">пупке</a> <a onclick="SaveText(this)">etc.</a> <a onclick="SaveText(this)">наряд</a> > <a onclick="SaveText(this)">больше, чем одежда</a><a onclick="SaveText(this)">
+	 на каждый день</a>. <a onclick="SaveText(this)">мода выше, чем высота</a>. <a onclick="SaveText(this)">зин</a> > <a onclick="SaveText(this)">бумажное размножение</a> и <a onclick="SaveText(this)">тиражирование вас</a>, <a onclick="SaveText(this)">
+	будто вы фэшн</a>,  <a onclick="SaveText(this)">новость или</a> <a onclick="SaveText(this)">рецепт</a>.
+
+    </div>
+
+    <div id="service-text">
+        <a onclick="SaveText(this)">работа с пространством </a> ><a onclick="SaveText(this)"> создадим эстетическую композицию </a> ><a onclick="SaveText(this)">на пустом месте.</a> ><a onclick="SaveText(this)"> найдём красоту </a> ><a onclick="SaveText(this)">в изъянах </a>        <a onclick="SaveText(this)">
+	или элегантно</a> <a onclick="SaveText(this)"> прикроем дыру в стене</a> <a onclick="SaveText(this)"> картиной.</a> <a onclick="SaveText(this)"> 
+	дружная компания ></a> <a onclick="SaveText(this)"> для идиотских действий</a> <a onclick="SaveText(this)"> / моральная</a> <a onclick="SaveText(this)">
+	, идейная,</a> <a onclick="SaveText(this)"> концептуальная поддержка</a> <a onclick="SaveText(this)"> для вашего перфоманса.</a> <a onclick="SaveText(this)">
+        ремонт </a>> <a onclick="SaveText(this)"> альтернативным способом </a> <a onclick="SaveText(this)">покрасим стены/пол.</a> <a onclick="SaveText(this)"> составим мебель в инсталляцию </a> <a onclick="SaveText(this)">
+	в стиле arte povera. </a> <a onclick="SaveText(this)">оформление</a> ><a onclick="SaveText(this)"> пи*дато </a> <a onclick="SaveText(this)">оформим пи*датое кафе.</a> <a onclick="SaveText(this)"> 
+	оформление. </a> <a onclick="SaveText(this)">мление. </a> <a onclick="SaveText(this)">(;) </a> <a onclick="SaveText(this)">очень контемпорари. </a> <a onclick="SaveText(this)">и дизайнеры. 
+	</a> <a onclick="SaveText(this)">/ксерокопии дипломов при встрече/. </a> <a onclick="SaveText(this)">фото-зона</a> <a onclick="SaveText(this)">
+        > </a > <a onclick="SaveText(this)">создадим портал-состояние</a> <a onclick="SaveText(this)"> in-progress. </a> <a onclick="SaveText(this)">/это как дизайн на грани искусства/.</a> <a onclick="SaveText(this)">soundдизайн </a>
+        <a onclick="SaveText(this)"> подберем звучание </a> <a onclick="SaveText(this)">для вашего места, </a> <a onclick="SaveText(this)">повода, </a> <a onclick="SaveText(this)">ситуации. </a>
+        <a onclick="SaveText(this)">лайв.</a> <a onclick="SaveText(this)"> реклама</a> <a onclick="SaveText(this)"> видеоролик на тему чего угодно.</a> <a onclick="SaveText(this)">
+	 хайповый.</a> <a onclick="SaveText(this)"> creativно.</a> <a onclick="SaveText(this)"> можно и крипово.</a> <a onclick="SaveText(this)"> лайки репосты</a>
+        <a onclick="SaveText(this)">
+        </a> <a onclick="SaveText(this)">колокольчик. </a> <a onclick="SaveText(this)">фотосъемка+</a> <a onclick="SaveText(this)">световые слепки момента,</a> <a onclick="SaveText(this)"> 
+	ресничные документации. </a> <a onclick="SaveText(this)">видеосъемка+ </a> > <a onclick="SaveText(this)">наблюдения,</a> <a onclick="SaveText(this)"> созерцания,</a> <a onclick="SaveText(this)"> зрение,</a> <a onclick="SaveText(this)"> 
+	иZOOMления реальностью.</a> <a onclick="SaveText(this)"> массовка</a> > <a onclick="SaveText(this)">придем на ваше мероприятие</a> <a onclick="SaveText(this)"> и эстетически займем пространство</a> <a onclick="SaveText(this)">
+	/оплата поминутно/.</a> <a onclick="SaveText(this)"> текст</a> <a onclick="SaveText(this)">
+        > </a> <a onclick="SaveText(this)">по пунктам: </a> <a onclick="SaveText(this)">1. нереальная биография.</a> <a onclick="SaveText(this)"> 2. свободный стих.</a> <a onclick="SaveText(this)">
+	 3. тягучая песня.</a> <a onclick="SaveText(this)"> 4. гороскоп комментинг</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">обратная связь под вашим постом в соцсетях.</a> <a onclick="SaveText(this)">
+	 комплемент</a> <a onclick="SaveText(this)">/дискуссия</a> <a onclick="SaveText(this)">/провокация.</a> <a onclick="SaveText(this)"> медвежья услуга</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">
+	странн0неп0нятн0д0р0го0бесценн0.</a> <a onclick="SaveText(this)"> системный сб0й.</a> <a onclick="SaveText(this)">
+        GLITCH/.</a> <a onclick="SaveText(this)"> триппоходсплав в секонд</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">худ.сопро_вождение кругами.</a> <a onclick="SaveText(this)"> дич рич битч китч</a> <a onclick="SaveText(this)">
+	 стрэндж секс.</a> <a onclick="SaveText(this)"> зэтс ол.</a> <a onclick="SaveText(this)"> P/S^ владельца секонд-хэнда нет second hand.</a> <a onclick="SaveText(this)">
+	 дрейф</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">max поэтические</a> <a onclick="SaveText(this)"> романтические</a> <a onclick="SaveText(this)"> аутистические</a> <a onclick="SaveText(this)">
+	 прогулки по городу.</a> <a onclick="SaveText(this)"> почти VR </a> <a onclick="SaveText(this)">с художниками.</a>
+        <a onclick="SaveText(this)">
+        </a> <a onclick="SaveText(this)">пощупать другое мышление.</a> <a onclick="SaveText(this)"> new экскурсия.</a> <a onclick="SaveText(this)"> экспресс-рисерч</a> <a onclick="SaveText(this)"> ></a> <a onclick="SaveText(this)">
+	 пишем культурный код.</a> <a onclick="SaveText(this)"> быстро,</a> <a onclick="SaveText(this)"> не очень непонятно, но весело*</a> <a onclick="SaveText(this)"> объявление-явление</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">
+	поклейка из рук в руки,</a> <a onclick="SaveText(this)"> подборки с авито</a> <a onclick="SaveText(this)"> и пост на кирпичной стене.</a> <a onclick="SaveText(this)"> кейтеринг-хэппенинг</a> <a onclick="SaveText(this)">
+	 > </a> <a onclick="SaveText(this)">еда, которая
+        произойдет у вас на глазах.</a> <a onclick="SaveText(this)"> проведем на официальном мероприятии </a> <a onclick="SaveText(this)">или в гостях у мамы</a> <a onclick="SaveText(this)">/бабушки.</a> <a onclick="SaveText(this)">
+	 поздравление</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">мультижанровая откытка.</a> <a onclick="SaveText(this)"> поэтично.</a> <a onclick="SaveText(this)"> публично.</a> <a onclick="SaveText(this)">
+	 практично.</a> <a onclick="SaveText(this)"> unforgettable.</a> <a onclick="SaveText(this)"> артист-ток-тет-а-тет </a> <a onclick="SaveText(this)">> </a> <a onclick="SaveText(this)">выбери художника, у кого хочешь отсыпать опыта
+	</a> <a onclick="SaveText(this)"> в свою копилку. </a> <a onclick="SaveText(this)">поговорим?</a> <a onclick="SaveText(this)"> порисуем? </a> <a onclick="SaveText(this)">подвигаемся? </a> <a onclick="SaveText(this)">
+	поделаем? </a> <a onclick="SaveText(this)">вместе :)</a> <a onclick="SaveText(this)"> массаж</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">нежное,</a> <a onclick="SaveText(this)"> экзистенциальное переживание</a>
+        <a onclick="SaveText(this)">
+        </a> <a onclick="SaveText(this)"> единства с телом,</a> <a onclick="SaveText(this)"> потерянным и заброшенным</a> <a onclick="SaveText(this)">в цифровых коммуникациях. 
+	</a> <a onclick="SaveText(this)">водочный перформанс</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">все грани русской меланхолии</a> <a onclick="SaveText(this)"> / абсентной</a> <a onclick="SaveText(this)">
+        гиперчувствительности.</a> <a onclick="SaveText(this)"> создание образа </a> <a onclick="SaveText(this)">> max fucktor.</a> <a onclick="SaveText(this)"> ноготочки.</a> <a onclick="SaveText(this)"> бровки?</a> <a onclick="SaveText(this)">
+	 губки?</a> <a onclick="SaveText(this)"> экспрессивно,</a> <a onclick="SaveText(this)"> агрессивно,</a> <a onclick="SaveText(this)"> иммерсивно.</a> <a onclick="SaveText(this)"> "критика</a> <a onclick="SaveText(this)"> ></a> <a onclick="SaveText(this)">
+	 макияж, </a> <a onclick="SaveText(this)">одежда,</a> <a onclick="SaveText(this)"> родители,</a> <a onclick="SaveText(this)"> жизнь ...</a> <a onclick="SaveText(this)">
+	 рецензия</a> <a onclick="SaveText(this)">/фельетон</a> <a onclick="SaveText(this)">/модный приговор."</a> <a onclick="SaveText(this)"> брейншторм </a> <a onclick="SaveText(this)">> </a> <a onclick="SaveText(this)">
+	групповое реагирование.</a> <a onclick="SaveText(this)"> очень
+        творчески решим очень любую задачу.</a> <a onclick="SaveText(this)"> очень.</a> <a onclick="SaveText(this)"> быстро крэнг актуальность.</a> <a onclick="SaveText(this)"> аудио заготовки</a> <a onclick="SaveText(this)"> ></a> <a onclick="SaveText(this)">
+	 закрутки,</a> <a onclick="SaveText(this)"> консервы,</a> <a onclick="SaveText(this)"> кураторский куражный плейлист.</a> <a onclick="SaveText(this)"> консультация </a> <a onclick="SaveText(this)">></a> <a onclick="SaveText(this)">
+	 смол ток</a> <a onclick="SaveText(this)"> по вопрсам жизни</a> <a onclick="SaveText(this)"> и проблемам эстетики.</a> <a onclick="SaveText(this)"> постановка танца</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">
+	постановка танца любой дикости.</a> <a onclick="SaveText(this)"> сложности.</a> <a onclick="SaveText(this)"> массовости.</a> <a onclick="SaveText(this)"> шумности. от души.</a> <a onclick="SaveText(this)">
+	 с оригинальной музыкой.</a> <a onclick="SaveText(this)"> оценка стоимости искусства</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">компактный app-арт-прайс-калькулятор для android. </a> <a onclick="SaveText(this)">
+	просто знай себе цену.</a>
+        <div>
+
+
+
+</body>
+
+</html>
