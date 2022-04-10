@@ -1,9 +1,3 @@
-<!-- сделать все слова как выставка -->
-<!-- счетчик-ссылка на funerals -->
-<!-- поиск картинок -->
-<!-- рефакторинг -->
-<!-- хрс -->
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -31,39 +25,38 @@
 
     <script>
         var keywords = []
+        var capwords = []
         var i = 0
 
-        function SaveText(thatTXT) {
-            word = thatTXT.innerHTML;
-            keywords[i] = word;
+        function SaveText(thatTXT, txt) {
+            keywords[i] = txt;
+            capwords[i] = thatTXT.innerHTML;
+            thatTXT.style.backgroundColor = 'yellow'
+
             i = i + 1
         }
 
-        function SaveAlt(thatTXT) {
-            word = thatTXT;
-            keywords[i] = word;
-            i = i + 1
-        }
 
         function PassWords(keywords) {
-            var item = keywords[Math.floor(Math.random() * keywords.length)];
-            localStorage.setItem('storage', item);
+            var j = Math.floor(Math.random() * keywords.length)
+            localStorage.setItem('kwstorage', keywords[j]);
+            localStorage.setItem('capstorage', capwords[j]);
         }
     </script>
 
+
     <div id="event-text">
-        <a onclick="SaveText(this)">выставка</a> > <a onclick="SaveAlt('дома')"> у вас дома</a> <a onclick="SaveText(this)">/в холодильнике</a>/
-        <a onclick="SaveAlt('in a dream')">во сне ... </a> <a onclick="SaveText(this)">везде. </a> <a onclick="SaveText(this)">др </a> >>
-        <a onclick="SaveText(this)" если уж рождаться каждый год,</a>
-            <a onclick="SaveText(this)"> то crazy,</a> >
-            <a onclick="SaveText(this)" эпатажно </a> <a onclick="SaveText(this)"> и с нежданчиками.</a>
-                <a onclick="SaveText(this)"> детский праздник > </a> <a onclick="SaveText(this)">выступление artists.</a> <a onclick="SaveText(this)"> очень мило.</a> <a onclick="SaveText(this)"> очень весело.</a>
-                <a onclick="SaveText(this)"> отлично.</a> <a onclick="SaveText(this)"> свадьба</a> > <a onclick="SaveText(this)">сладко-горькие тосты,</a> <a onclick="SaveText(this)"> изобильный выкуп невесты,</a>
-                <a onclick="SaveText(this)"> нелинейные конкурсы, </a> <a onclick="SaveText(this)">эмоциональные салюты, </a> <a onclick="SaveText(this)">вспышки! </a> <a onclick="SaveText(this)">развод 
-    </a> <a onclick="SaveText(this)">> деликатная церемония</a> <a onclick="SaveText(this)"> delete</a> <a onclick="SaveText(this)"> любви </a> <a onclick="SaveText(this)">выпускной</a> <a onclick="SaveText(this)"> > запускной. </a>
-                <a onclick="SaveText(this)">похороны >  </a> <a onclick="SaveText(this)"> 1000101010000111010101 </a> <a onclick="SaveText(this)">открытие/</a> <a onclick="SaveText(this)">закрытие</a>
-                <a onclick="SaveText(this)"> [подставь название] ></a> <a onclick="SaveText(this)"> чтоб все прониклись аж на молекулярном уровне. </a> <a onclick="SaveText(this)">свидание > </a> <a onclick="SaveText(this)">уляля, </a>
-                <a onclick="SaveText(this)">румяные щёчки, </a> <a onclick="SaveText(this)">сюр,</a> <a onclick="SaveText(this)"> приз.</a>
+        <a onclick="SaveText(this,'выставка')">выставка</a> > <a onclick="SaveText(this, 'at home')"> у вас дома</a> / <a onclick="SaveText(this, 'в холодильнике')">в холодильнике</a> /
+        <a onclick="SaveText(this,'in a dream')">во сне ... </a> <a onclick="SaveText(this,'везде')">везде </a>. <a onclick="SaveText(this,'др')">др</a> >> если уж
+        <a onclick="SaveText(this,'роды')">рождаться каждый год</a>, то <a onclick="SaveText(this,'crazy')">crazy</a>, >
+        <a onclick="SaveText(this,'shocking')">эпатажно</a> и <a onclick="SaveText(this,'surprize')">с нежданчиками</a>.
+        <a onclick="SaveText(this,'детский праздник')"> детский праздник > </a> <a onclick="SaveText(this,'artist')">выступление artists</a>. <a onclick="SaveText(this,'nicely')">очень мило</a>
+        <a onclick="SaveText(this,'fun')">очень весело</a>.
+        <a onclick="SaveText(this,'отлично')">отлично</a>. <a onclick="SaveText(this,'свадьба')">свадьба</a> > <a onclick="SaveText(this,'bitter')">сладко-горькие тосты</a>, <a onclick="SaveText(this,'bride')">изобильный выкуп невесты</a>,
+        <a onclick="SaveText(this,'nonlinear')">нелинейные конкурсы</a>, <a onclick="SaveText(this,'fireworks')">эмоциональные салюты</a>, <a onclick="SaveText(this,'вспышки')">вспышки!</a> <a onclick="SaveText(this,'развод')">развод</a> > <a onclick="SaveText(this,'деликатная церемония')">деликатная церемония</a>        <a onclick="SaveText(this,'delete')">delete</a> <a onclick="SaveText(this,'любви')"> любви </a> <a onclick="SaveText(this,'выпускной')">выпускной</a> ><a onclick="SaveText(this,'start up')"> запускной </a>.
+        <a onclick="SaveText(this,'похороны')">похороны</a> > <a onclick="SaveText(this,'math')"> 1000101010000111010101</a> <a onclick="SaveText(this,'открытие')">открытие</a>/ <a onclick="SaveText(this,'закрытие')">закрытие</a>
+        <a onclick="SaveText(this,'guess')">[подставь название]</a>> <a onclick="SaveText(this,'nuclear')">чтоб все прониклись аж на молекулярном уровне</a>. <a onclick="SaveText(this,'свидание')">свидание> </a> <a onclick="SaveText(this,'oh la la')">уляля</a>,
+        <a onclick="SaveText(this,'rosy cheeks')">румяные щёчки</a>, <a onclick="SaveText(this,'surreal')">сюр</a>, <a onclick="SaveText(this,'prize')">приз</a>
     </div>
 
     <div id="thing-text">
@@ -129,7 +122,6 @@
 	 с оригинальной музыкой.</a> <a onclick="SaveText(this)"> оценка стоимости искусства</a> <a onclick="SaveText(this)"> > </a> <a onclick="SaveText(this)">компактный app-арт-прайс-калькулятор для android. </a> <a onclick="SaveText(this)">
 	просто знай себе цену.</a>
         <div>
-
 
 
 </body>

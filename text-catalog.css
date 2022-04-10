@@ -4,10 +4,6 @@ body {
     zoom: 1.5;
 }
 
-a:active {
-    background-color: yellow;
-}
-
 #ellipse {
     position: absolute;
     width: 90px;
@@ -105,7 +101,7 @@ div#event-text {
     font-size: 25px;
     line-height: 33px;
     /* or 132% */
-    color: #fff;
+    /* color: #fff; */
 }
 
 div#thing-text {
@@ -120,7 +116,7 @@ div#thing-text {
     font-size: 25px;
     line-height: 33px;
     /* or 132% */
-    color: #fff;
+    /* color: #fff; */
 }
 
 div#service-text {
@@ -135,10 +131,19 @@ div#service-text {
     font-size: 25px;
     line-height: 33px;
     /* or 132% */
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
-#event-text:hover {
+a:active {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: yellow;
+}
+
+
+/* #event-text:hover {
     color: #000;
 }
 
@@ -148,4 +153,4 @@ div#service-text {
 
 #service-text:hover {
     color: #000;
-}
+} */

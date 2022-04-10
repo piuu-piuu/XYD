@@ -12,8 +12,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        var keyword = localStorage.getItem("storage");
-        var caption = document.getElementById("key-caption");
+        var keyword = localStorage.getItem("kwstorage");
+        var capword = localStorage.getItem("capstorage");
     </script>
 </head>
 
@@ -205,7 +205,7 @@
 
 
         var caption = document.getElementById("key-caption");
-        caption.innerText = keyword;
+        caption.innerText = capword;
 
         link = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&method=flickr.photos.search&tags=" + keyword
 
