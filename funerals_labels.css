@@ -11,7 +11,8 @@
     display: flex;
     align-items: center;
     text-align: right;
-    color: gray;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .brightness_box_lbl {
@@ -27,6 +28,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
 }
 
 .touch_box_lbl {
@@ -43,6 +45,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
 }
 
 .volume_box_lbl {
@@ -58,6 +61,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
     z-index: 3;
 }
 
@@ -74,6 +78,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
     z-index: 3;
 }
 
@@ -106,6 +111,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
     z-index: 3;
 }
 
@@ -121,6 +127,7 @@
     display: flex;
     align-items: center;
     text-align: right;
+    background-color: #FFFFFF;
     color: gray;
 }
 
@@ -135,6 +142,7 @@
     line-height: 33px;
     display: flex;
     align-items: center;
+    background-color: #FFFFFF;
     color: gray;
 }
 
@@ -151,6 +159,7 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
     z-index: 3;
 }
 
@@ -167,4 +176,5 @@
     align-items: center;
     text-align: right;
     color: gray;
+    background-color: #FFFFFF;
 }
