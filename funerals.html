@@ -207,7 +207,8 @@
         var caption = document.getElementById("key-caption");
         caption.innerText = capword;
 
-        link = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&method=flickr.photos.search&tags=" + keyword
+        link = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&method=flickr.photos.search?&tags=" + keyword
+            // alert(link)
 
         $(document).ready(function() {
 
