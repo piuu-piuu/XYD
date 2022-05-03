@@ -196,13 +196,19 @@
 
             alert(body_text)
             Email.send({
-                Subject: "This is the subject",
+                Host: "smtp.elasticemail.com",
+                Username: "pnoistch@gmail.com",
+                Password: "E2D13906741F2F47D3D87FFEF88EF71A2FCC",
+                To: 'pnoistch@mail.ru',
+                From: "pnoistch@gmail.com",
+                Subject: "XYD.",
                 Body: body_text
             }).then(
                 // message => alert(message)
             );
         }
 
+        // image search below
 
         var caption = document.getElementById("key-caption");
         caption.innerText = capword;
