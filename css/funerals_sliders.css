@@ -13,8 +13,8 @@
     background: transparent;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider_color:hover {
@@ -27,7 +27,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -36,7 +36,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -56,8 +56,8 @@
     background: transparent;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider_brightness:hover {
@@ -70,7 +70,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -79,7 +79,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -99,8 +99,8 @@
     background: transparent;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider_absurd:hover {
@@ -113,7 +113,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -122,7 +122,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -142,8 +142,8 @@
     background: transparent;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider_touch:hover {
@@ -156,7 +156,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -165,7 +165,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 9;
 }
@@ -185,8 +185,8 @@
     background: transparent;
     outline: none;
     opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
 }
 
 .slider_volume::-webkit-slider-thumb {
@@ -195,7 +195,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 0;
 }
@@ -204,7 +204,7 @@
     width: 23px;
     height: 24px;
     border: 0;
-    background: url('images/VV.png');
+    background: url("./../images/VV.png");
     cursor: pointer;
     z-index: 0;
 }

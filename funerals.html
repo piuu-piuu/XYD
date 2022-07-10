@@ -14,6 +14,10 @@
     <script>
         var keyword = localStorage.getItem("kwstorage");
         var capword = localStorage.getItem("capstorage");
+        var keyword1 = localStorage.getItem("kwstorage1");
+        var capword1 = localStorage.getItem("capstorage1");
+        var keyword2 = localStorage.getItem("kwstorage2");
+        var capword2 = localStorage.getItem("capstorage2");
     </script>
 </head>
 
@@ -31,8 +35,8 @@
     <img class="main_image" id="main_image" src="" alt="">
 
     <h1>худ.агентство</h1>
-    <h2>поддержка</h2>
-    <h2>очень весело</h2>
+    <h2 id="key-caption2">поддержка</h2>
+    <h2 id="key-caption1">очень весело</h2>
     <h2 id="key-caption">похороны</h2>
 
     <div class="color_box"> </div>
@@ -214,6 +218,12 @@
         var caption = document.getElementById("key-caption");
         caption.innerText = capword;
 
+        var caption1 = document.getElementById("key-caption1");
+        caption1.innerText = capword1;
+
+        var caption2 = document.getElementById("key-caption2");
+        caption2.innerText = capword2;
+
         link = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&method=flickr.photos.search?&tags=" + keyword
             // alert(link)
 
@@ -234,5 +244,4 @@
 
         });
     </script>
-
 </body>

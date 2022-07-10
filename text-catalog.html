@@ -35,11 +35,14 @@
             i = i + 1
         }
 
-
         function PassWords(keywords) {
-            var j = Math.floor(Math.random() * keywords.length)
-            localStorage.setItem('kwstorage', keywords[j]);
-            localStorage.setItem('capstorage', capwords[j]);
+            // var j = Math.floor(Math.random() * keywords.length)
+            localStorage.setItem('kwstorage', keywords[0]);
+            localStorage.setItem('capstorage', capwords[0]);
+            localStorage.setItem('kwstorage1', keywords[1]);
+            localStorage.setItem('capstorage1', capwords[1]);
+            localStorage.setItem('kwstorage2', keywords[2]);
+            localStorage.setItem('capstorage2', capwords[2]);
         }
     </script>
 
@@ -53,7 +56,7 @@
                 <a onclick="SaveText(this, 'in a dream') ">во сне ... </a> <a onclick="SaveText(this, 'везде') ">везде </a>. <a onclick="SaveText(this, 'др') ">др</a> >> если уж
                 <a onclick="SaveText(this, 'роды') ">рождаться каждый год</a>, то <a onclick="SaveText(this, 'crazy') ">crazy</a>, >
                 <a onclick="SaveText(this, 'shocking') ">эпатажно</a> и <a onclick="SaveText(this, 'surprize') ">с нежданчиками</a>.
-                <a onclick="SaveText(this, 'детский праздник') "> детский праздник > </a> <a onclick="SaveText(this, 'artist') ">выступление artists</a>. <a onclick="SaveText(this, 'nicely') ">очень мило</a>
+                <a onclick="SaveText(this, 'детский праздник') "> детский праздник </a> > <a onclick="SaveText(this, 'artist') ">выступление artists</a>. <a onclick="SaveText(this, 'nicely') ">очень мило</a>
                 <a onclick="SaveText(this, 'fun') ">очень весело</a>.
                 <a onclick="SaveText(this, 'отлично') ">отлично</a>. <a onclick="SaveText(this, 'свадьба') ">свадьба</a> > <a onclick="SaveText(this, 'bitter') ">сладко-горькие тосты</a>, <a onclick="SaveText(this, 'bride') ">изобильный выкуп невесты</a>,
                 <a onclick="SaveText(this, 'nonlinear') ">нелинейные конкурсы</a>, <a onclick="SaveText(this, 'fireworks') ">эмоциональные салюты</a>, <a onclick="SaveText(this, 'вспышки') ">вспышки!</a> <a onclick="SaveText(this, 'развод') ">развод</a>                >
